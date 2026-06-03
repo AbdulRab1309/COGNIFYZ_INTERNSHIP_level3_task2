@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COGNIFYZ® — Internship Program</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #111111;
+      --border-color: #111111;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.4;
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center; /* Changed from space-between to center */
+      align-items: center;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      position: sticky;
+      top: 0;
+      background-color: var(--bg-color);
+      z-index: 100;
+    }
+
+    .nav-brand {
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    header {
+      padding: 6rem 2rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    h1 {
+      font-size: clamp(3rem, 8vw, 7rem);
+      line-height: 0.9;
+      letter-spacing: -0.03em;
+      max-width: 1400px;
+      margin-bottom: 3rem;
+    }
+
+    .intro {
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      max-width: 800px;
+      text-transform: none;
+      font-weight: 500;
+    }
+
+    .section-container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .section-label {
+      padding: 2rem;
+      border-right: 1px solid var(--border-color);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .section-content {
+      padding: 2rem;
+      text-transform: none;
+      font-size: 1.2rem;
+      max-width: 900px;
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .grid-item {
+      padding: 2rem;
+      border-right: 1px solid var(--border-color);
+    }
+
+    .grid-item:last-child {
+      border-right: none;
+    }
+
+    .grid-item h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .grid-item p {
+      text-transform: none;
+      font-size: 1rem;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+      text-transform: none;
+    }
+
+    li {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .cta-wrapper {
+      padding: 4rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background-color: var(--text-color);
+      color: var(--bg-color);
+      padding: 1.5rem 4rem;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.5rem;
+      transition: all 0.2s ease;
+      border: 2px solid var(--text-color);
+    }
+
+    .cta-btn:hover {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    footer {
+      padding: 3rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    footer a {
+      color: var(--text-color);
+      text-decoration: none;
+      border-bottom: 1px solid var(--text-color);
+    }
+
+    footer a:hover {
+      background-color: var(--text-color);
+      color: var(--bg-color);
+    }
+
+    @media (max-width: 900px) {
+      .section-container {
+        grid-template-columns: 1fr;
+      }
+      .section-label {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem 2rem;
+      }
+      .highlights-grid {
+        grid-template-columns: 1fr;
+      }
+      .grid-item {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-brand">COGNIFYZ®</div>
+  </nav>
+
+  <header>
+    <h1>WEB DEVELOPER<br>INTERNSHIP.</h1>
+    <p class="intro">
+      Cognifyz: Where Data Meets Intelligence. Founded in 2023 (and officially incorporated in 2026 as Cognifyz IT Solutions Pvt. Ltd.) Specimen No. 01.
+    </p>
+  </header>
+
+  <section class="section-container">
+    <div class="section-label">01 // ABOUT US</div>
+    <div class="section-content">
+      Cognifyz was introduced to the tech world with a bold, dual-purpose vision. It originally launched by offering AI-powered customer support chatbots and Machine Learning analytics to help businesses automate operations and scale efficiently. However, it didn't just stop at enterprise software—Cognifyz simultaneously introduced massive, project-based tech internships and training programs to bridge the gap between academic theory and real-world industry demands. Today, it stands as an eye-catching powerhouse that is both transforming modern businesses with smart data and aggressively upskilling the next generation of tech talent.
+    </div>
+  </section>
+
+  <section class="section-container">
+    <div class="section-label">02 // PROGRAM OVERVIEW</div>
+    <div class="section-content">
+      The Cognifyz Virtual Internship Program is a genuine, hands-on training initiative designed to bridge the gap between classroom theory and real-world industry demands across high-growth domains like Web Development, Data Science, and Machine Learning. Distinct from profit-driven corporate programs, Cognifyz offers this 4-week (1-month), completely free-of-charge experience with a strict focus on experiential learning rather than passive watching. Instead of spoon-feeding interns with pre-recorded videos, the program assigns structured, real-world tasks and practical datasets, challenging participants to independently research, code, and build tangible projects.
+    </div>
+  </section>
+
+  <section class="highlights-grid">
+    <div class="grid-item">
+      <h3>REAL-WORLD EXP</h3>
+      <p>Work directly on production environments. Contribute to active codebases, deploy to live servers, and see your work impact actual users.</p>
+    </div>
+    <div class="grid-item">
+      <h3>EXPERT MENTORSHIP</h3>
+      <p>Get paired with senior developers for one-on-one guidance, comprehensive code reviews, and deep-dive architectural planning sessions.</p>
+    </div>
+    <div class="grid-item">
+      <h3>CAREER ACCELERATION</h3>
+      <p>High-performing interns are fast-tracked and evaluated for full-time pre-placement offers upon the successful completion of the program.</p>
+    </div>
+  </section>
+
+  <section class="section-container">
+    <div class="section-label">03 // QUALIFICATIONS</div>
+    <div class="section-content">
+      <ul>
+        <li>Proficiency in HTML5, CSS3, and modern JavaScript (ES6+).</li>
+        <li>Experience building responsive UI with Tailwind CSS and Framer Motion.</li>
+        <li>Familiarity with full-stack environments including Next.js and Node.js.</li>
+        <li>Understanding of backend routing and templating with Express.js and EJS.</li>
+        <li>A passion for problem-solving and clean, maintainable code architectures.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="cta-wrapper">
+    <a href="#apply" class="cta-btn">APPLY NOW</a>
+  </div>
+
+  <footer id="apply">
+    <div>
+      READY TO KICKSTART YOUR JOURNEY?<br>
+      SEND YOUR RESUME AND PORTFOLIO.<br><br>
+      <a href="mailto:hr@cognifyz.com">HR@COGNIFYZ.COM</a>
+    </div>
+    <div style="text-align: right;">
+      LOCATION: BENGALURU, IN<br>
+      LAT 12.9716° N, LONG 77.5946° E<br><br>
+      &copy; 2026 COGNIFYZ TECHNOLOGIES.
+    </div>
+  </footer>
+
+</body>
+</html>
